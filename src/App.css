@@ -1,26 +1,37 @@
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.container-fluid {
+  padding: 0;
 }
 
-textarea {
-  resize: none;
-  height: calc(100vh - 56px);
-  font-size: 16px;
-  padding: 15px;
-  border: none;
-  outline: none;
-  width: 100%;
+.editor-pane,
+.preview-pane {
+  padding: 20px;
 }
 
 .preview {
-  height: calc(100vh - 56px);
-  overflow-y: auto;
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
   border: 1px solid #ddd;
+  height: calc(100vh - 130px);
+  overflow-y: auto;
 }
 
-.btn-group {
-  margin-bottom: 10px;
+.editor-box {
+  background-color: #fff;
+  padding: 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  height: calc(100vh - 140px);
+  /* overflow-y: auto; */
+}
+
+textarea {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border: none;
+  resize: none;
+  outline: none;
+  font-size: 16px;
+  box-sizing: border-box;
 }
